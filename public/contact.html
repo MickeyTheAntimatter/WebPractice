@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Mickey - Code Alchemist</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            padding-bottom: 100px;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .contact-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        .contact-method {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            background: linear-gradient(145deg, #ffffff, #f0f0f0);
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        
+        .contact-icon {
+            font-size: 2rem;
+            margin-right: 20px;
+            width: 70px;
+            height: 70px;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+        
+        .contact-details {
+            flex-grow: 1;
+        }
+        
+        .contact-label {
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 5px;
+            display: block;
+            font-size: 1.2rem;
+        }
+        
+        .contact-value {
+            font-size: 1.1rem;
+            font-family: 'Courier New', monospace;
+            background-color: var(--light);
+            padding: 8px 12px;
+            border-radius: 4px;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        
+        .tech-jargon {
+            font-style: italic;
+            color: var(--accent);
+            margin-top: 10px;
+            font-size: 0.9rem;
+            border-left: 3px solid var(--secondary);
+            padding-left: 10px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: var(--accent);
+            transform: scale(1.05);
+        }
+        
+        .disclaimer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.8rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <h1>Digital Homing Beacon</h1>
+    <p style="text-align: center; color: var(--secondary);">(aka How to Ping Me)</p>
+    
+    <div class="contact-container">
+        <div class="contact-method">
+            <div class="contact-icon">👨‍💻</div>
+            <div class="contact-details">
+                <span class="contact-label">Code Repository</span>
+                <span class="contact-value">github.com/MickeyTheAntimatter</span>
+                <p class="tech-jargon">
+                    Where my commits go to frolic. Warning: May contain traces of experimental code and half-baked ideas.
+                </p>
+            </div>
+        </div>
+        
+        <div class="contact-method">
+            <div class="contact-icon">📨</div>
+            <div class="contact-details">
+                <span class="contact-label">Electronic Missiles</span>
+                <span class="contact-value">manmicky7@gmail.com</span>
+                <p class="tech-jargon">
+                    Guaranteed 99.9% spam-free inbox. Average response time: &lt;24hrs (unless I'm in the coding zone).
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="disclaimer">
+        <p>Note: All communications are encrypted with enthusiasm and decrypted with coffee.</p>
+    </div>
+    
+    <div class="nav-links">
+        <a href="../index.html">Back to Portfolio</a>
+        <a href="./about.html">About Me</a>
+    </div>
+</body>
+</html>

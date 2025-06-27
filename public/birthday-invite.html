@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickey's Birthday Bash</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            padding-bottom: 100px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: var(--accent);
+            margin-top: 30px;
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: var(--secondary);
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        .cake-img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            margin: 20px 0;
+            transition: transform 0.3s;
+        }
+        
+        .cake-img:hover {
+            transform: scale(1.02);
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 30px auto;
+            max-width: 600px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: left;
+        }
+        
+        h3 {
+            color: var(--primary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        
+        .map-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: var(--secondary);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+        
+        .map-link:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+        }
+        
+        .emoji {
+            font-size: 1.2em;
+            margin-right: 8px;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎉 It's My Birthday! 🎉</h1>
+    <h2>Mark your calendars for March 23rd</h2>
+    
+    <img src="https://raw.githubusercontent.com/appbrewery/webdev/main/birthday-cake3.4.jpeg" 
+         alt="purple birthday cake with candles" 
+         class="cake-img">
+    
+    <div class="section">
+        <h3>🎁 Party Essentials</h3>
+        <ul>
+            <li><span class="emoji">🎈</span> Balloons (I'm absolutely balloon-atic!)</li>
+            <li><span class="emoji">🍰</span> Cake (Professional cake assassin at your service)</li>
+            <li><span class="emoji">🍕</span> An appetite (We're catering for a small army)</li>
+            <li><span class="emoji">🎲</span> Board games (Optional but highly encouraged)</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h3>📍 Party Central</h3>
+        <p>The celebration will be at my favorite spot in town. Come for the cake, stay for the memories!</p>
+        <a href="https://www.google.com/maps/@35.7040744,139.5577317,3a,75y,289.6h,87.01t,0.72r/data=!3m6!1e1!3m4!1sgT28ssf0BB2LxZ63JNcL1w!2e0!7i13312!8i6656" 
+           class="map-link">
+           Get Directions on Google Maps
+        </a>
+    </div>
+    
+    <div class="nav-links">
+        <a href="./index.html">Back to Portfolio</a>
+        <a href="./about.html">About Me</a>
+    </div>
+</body>
+</html>

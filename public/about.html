@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Mickey's Portfolio</title>
+    <style>
+        /* Consistent with portfolio theme */
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            padding-bottom: 100px;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        .content-container {
+            background-color: white;
+            border-radius: 8px;
+            padding: 30px;
+            margin-top: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+        
+        .highlight {
+            color: var(--secondary);
+            font-weight: 500;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), var(--secondary), rgba(0,0,0,0));
+            margin: 40px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>About Me</h1>
+    
+    <div class="content-container">
+        <p>Hello! I'm <span class="highlight">Mickey</span>, a passionate web developer with a love for creating beautiful, functional digital experiences. My journey into tech began when I first discovered how to customize my MySpace page (yes, I'm dating myself here!) and I've been hooked on coding ever since.</p>
+
+        <p>Currently specializing in <span class="highlight">front-end development</span>, I enjoy bringing designs to life with clean, semantic HTML and CSS. When I'm not battling with CSS specificity or JavaScript quirks, you can find me exploring new frameworks, contributing to open-source projects, or mentoring beginners in online coding communities.</p>
+
+        <p>What excites me most about web development is how it combines <span class="highlight">creativity with problem-solving</span>. Every project is a new puzzle to solve, and I love that moment when everything finally clicks into place. My approach focuses on building accessible, performant websites that deliver real value to users.</p>
+
+        <p>Outside of coding, I'm an avid <span class="highlight">photography enthusiast</span> and <span class="highlight">board game collector</span>. I believe these hobbies help me think differently about user experiences and interface design. I'm always looking to connect with fellow developers and creative professionals, so don't hesitate to reach out!</p>
+    </div>
+    
+    <hr>
+    
+    <div class="nav-links">
+        <a href="../index.html">Back to Portfolio</a>
+        <a href="./contact.html">Contact Me</a>
+    </div>
+</body>
+</html>
