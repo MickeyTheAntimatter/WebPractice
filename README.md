@@ -23,7 +23,7 @@ A modern portfolio website showcasing my web development projects. Features anim
 2. 2. Open `index.html` in browser
 
 ## Live Demo
-[View on GitHub Pages](https://mickeytheantimatter.github.io/portfolio)
+[View on GitHub Pages]([https://mickeytheantimatter.github.io/portfolio](https://github.com/MickeyTheAntimatter/WebPractice))
 
 ## Contact
 manmicky7@gmail.com
