@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickey | Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Poppins', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            padding-bottom: 100px;
+            overflow-x: hidden;
+        }
+
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            margin: -20px -20px 40px -20px;
+            background: linear-gradient(-45deg, #2c3e50, #3498db, #e74c3c, #ecf0f1);
+            background-size: 400% 400%;
+            animation: gradientBG 12s ease infinite;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::after {
+            content: "";
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background: #f9f9f9;
+            transform: skewY(-3deg);
+            z-index: 1;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: rgba(255,255,255,0.9);
+            font-weight: 300;
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            color: rgba(255,255,255,0.85);
+        }
+
+        .projects-header {
+            text-align: center;
+            margin: 60px 0 40px;
+            position: relative;
+        }
+
+        .projects-header h3 {
+            display: inline-block;
+            background: white;
+            padding: 0 30px;
+            position: relative;
+            z-index: 2;
+            color: var(--primary);
+            font-size: 1.8rem;
+        }
+
+        .projects-header::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--secondary);
+            z-index: 1;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 10px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.1);
+            position: relative;
+            overflow: hidden;
+            border-left: 5px solid var(--secondary);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        }
+
+        .project-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(52,152,219,0.1) 0%, rgba(231,76,60,0.05) 100%);
+            z-index: 0;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .project-card:hover::before {
+            opacity: 1;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            position: relative;
+        }
+
+        .project-title a {
+            color: var(--primary);
+            transition: color 0.3s;
+        }
+
+        .project-title a:hover {
+            color: var(--accent);
+        }
+
+        .project-description {
+            color: var(--text);
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .tech-tag {
+            background: var(--light);
+            color: var(--primary);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .cta-section {
+            text-align: center;
+            margin: 60px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: var(--primary);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(44,62,80,0.2);
+        }
+
+        .cta-button:hover {
+            background: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(231,76,60,0.3);
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .nav-links a {
+            padding: 12px 30px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 4px 10px rgba(44,62,80,0.2);
+        }
+
+        .nav-links a:hover {
+            background-color: var(--accent);
+            transform: translateY(-3px);
+            box-shadow: 0 7px 20px rgba(231,76,60,0.3);
+        }
+
+        /* Animation classes */
+        .animate-delay-1 {
+            animation-delay: 0.2s;
+        }
+        .animate-delay-2 {
+            animation-delay: 0.4s;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="hero">
+        <h1 class="animate__animated animate__fadeInDown">Mickey</h1>
+        <h2 class="animate__animated animate__fadeInDown animate__delay-1s">Web Developer & Digital Creator</h2>
+        <p class="tagline animate__animated animate__fadeIn animate__delay-2s">
+            Crafting elegant solutions through code and design. Turning ideas into interactive experiences.
+        </p>
+    </section>
+
+    <div class="projects-header">
+        <h3>Featured Projects</h3>
+    </div>
+
+    <div class="project-card animate__animated animate__fadeInUp">
+        <h3 class="project-title"><a href="./public/movie-ranking.html">Movie Ranking Project</a></h3>
+        <p class="project-description">
+            A curated showcase of cinematic masterpieces with personalized analytics and recommendations. 
+            Demonstrates clean data presentation and user-focused design principles.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">UI Design</span>
+        </div>
+    </div>
+
+    <div class="project-card animate__animated animate__fadeInUp animate-delay-1">
+        <h3 class="project-title"><a href="./public/birthday-invite.html">Birthday Invite Project</a></h3>
+        <p class="project-description">
+            An interactive digital invitation platform with RSVP functionality and dynamic content. 
+            Highlights event details while maintaining visual appeal and usability.
+        </p>
+        <div class="project-tech">
+            <span class="tech-tag">HTML5</span>
+            <span class="tech-tag">CSS3</span>
+            <span class="tech-tag">Responsive Design</span>
+        </div>
+    </div>
+
+    <div class="cta-section animate__animated animate__fadeIn animate-delay-2">
+        <a href="./public/contact.html" class="cta-button">Let's Build Something Together</a>
+    </div>
+
+    <div class="nav-links">
+        <a href="./public/about.html">About Me</a>
+        <a href="./public/contact.html">Contact</a>
+    </div>
+</body>
+</html>

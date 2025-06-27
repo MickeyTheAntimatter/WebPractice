@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mickey's Cinematic Picks</title>
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --secondary: #3498db;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+            --text: #333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+            padding-bottom: 100px;
+        }
+        
+        h1 {
+            color: var(--primary);
+            text-align: center;
+            margin-top: 30px;
+            font-size: 2.5rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            color: var(--secondary);
+            text-align: center;
+            font-weight: 300;
+            margin-bottom: 40px;
+        }
+        
+        .movie-card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--secondary);
+        }
+        
+        h3 {
+            color: var(--primary);
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+        
+        .movie-year {
+            color: var(--accent);
+            font-weight: 500;
+            display: inline-block;
+            margin-left: 10px;
+        }
+        
+        .movie-review {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .movie-highlight {
+            background-color: rgba(52, 152, 219, 0.1);
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-style: italic;
+        }
+        
+        hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0,0,0,0), var(--secondary), rgba(0,0,0,0));
+            margin: 50px 0;
+        }
+        
+        .nav-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+        }
+        
+        .nav-links a {
+            padding: 10px 20px;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 4px;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        
+        .nav-links a:hover {
+            background-color: var(--accent);
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Best Movies According to Mickey</h1>
+    <h2>My curated selection of cinematic masterpieces</h2>
+    
+    <hr>
+    
+    <div class="movie-card">
+        <h3>Inception <span class="movie-year">(2010)</span></h3>
+        <p class="movie-review">
+            Christopher Nolan's <span class="movie-highlight">mind-bending masterpiece</span> redefined the heist genre by blending 
+            dream physics with emotional storytelling. The layered narrative architecture, 
+            Hans Zimmer's iconic score, and Joseph Gordon-Levitt's <span class="movie-highlight">zero-gravity fight choreography</span> 
+            create an unparalleled cinematic experience. The ambiguous ending remains 
+            one of the most debated in modern film history.
+        </p>
+    </div>
+    
+    <div class="movie-card">
+        <h3>The Dark Knight Trilogy <span class="movie-year">(2005-2012)</span></h3>
+        <p class="movie-review">
+            Nolan's <span class="movie-highlight">genre-defining superhero saga</span> elevated comic book adaptations to 
+            Shakespearean heights. Heath Ledger's Joker performance became instant legend, 
+            while the trilogy's exploration of <span class="movie-highlight">chaos vs. order</span> and <span class="movie-highlight">heroic sacrifice</span> 
+            transcends the superhero genre. The practical effects, moral complexity, and 
+            Bruce Wayne's character arc set a benchmark that still influences the genre today.
+        </p>
+    </div>
+    
+    <div class="movie-card">
+        <h3>Swades <span class="movie-year">(2004)</span></h3>
+        <p class="movie-review">
+            Ashutosh Gowariker's <span class="movie-highlight">quietly revolutionary</span> drama presents a nuanced 
+            homecoming story that doubles as <span class="movie-highlight">social commentary</span>. Shah Rukh Khan's 
+            restrained performance as an NRI rediscovering his roots, combined with 
+            A.R. Rahman's soulful soundtrack, creates <span class="movie-highlight">cinematic poetry</span>. The village 
+            electrification sequence remains one of Hindi cinema's most powerful 
+            depictions of grassroots change.
+        </p>
+    </div>
+    
+    <hr>
+    
+    <div class="nav-links">
+        <a href="../index.html">Back to Portfolio</a>
+        <a href="./about.html">About Me</a>
+    </div>
+</body>
+</html>
