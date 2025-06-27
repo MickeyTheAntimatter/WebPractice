@@ -19,7 +19,7 @@ A modern portfolio website showcasing my web development projects. Features anim
 - GitHub Pages (hosting)
 
 ## Setup
-1. Clone repository: https://github.com/MickeyTheAntimatter/portfolio.git
+1. Clone repository: MickeyTheAntimatter/WebPractice
 2. 2. Open `index.html` in browser
 
 ## Live Demo
